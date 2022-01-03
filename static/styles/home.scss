@@ -14,11 +14,15 @@
     min-height: 500px;
     margin-left: auto;
     color: var(--main-color);
-    width: 300px;
+    width: 100%;
+    max-width: 400px;
     h2 {
         text-align: center;
     }
 }
 .top-tier-title {
     color: yellow;
+}
+.welcome-text-container {
+    padding: 10px;
 }

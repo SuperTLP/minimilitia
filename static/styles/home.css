@@ -18,7 +18,8 @@
   min-height: 500px;
   margin-left: auto;
   color: var(--main-color);
-  width: 300px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .top-tier-container h2 {
@@ -27,5 +28,9 @@
 
 .top-tier-title {
   color: yellow;
+}
+
+.welcome-text-container {
+  padding: 10px;
 }
 /*# sourceMappingURL=home.css.map */
