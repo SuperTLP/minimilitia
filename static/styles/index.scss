@@ -1,5 +1,6 @@
 :root {
-    --main-color: olivedrab
+    --main-color: olivedrab;
+    --profile-button-color: green;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit&family=Roboto+Mono&display=swap');
@@ -32,22 +33,32 @@ h1, h2, h3 {
     margin-left: auto;
 }
 .login-button {
-    color: white;
-    transition: all 200ms;
-    cursor: pointer;
     background-color: var(--main-color);
     border: 2px solid var(--main-color);
-    font-size: 20px;
-    width: 130px;
-    height: 40px;
+    margin-left: 5px;
     &:hover {
         background-color: transparent;
         color: var(--main-color)
     }
 }
+.profile-button {
+    background-color: var(--profile-button-color);
+    border: 2px solid var(--profile-button-color);
+    &:hover {
+        background-color: transparent;
+        color: var(--profile-button-color)
+    }
 
+}
+.button {
+    color: white;
+    transition: all 200ms;
+    cursor: pointer;
+    font-size: 20px;
+    width: 130px;
+    height: 40px;
+}
 .Owner {
-    text-align: center;
     
     background: linear-gradient(to right, rgb(0, 255, 119) 0%, rgb(255, 0, 0) 25%, rgb(0, 255, 98) 50%, rgb(255, 72, 0) 75%, rgb(0, 255, 119) 100%);
     background-size: 200% auto;
@@ -63,8 +74,14 @@ h1, h2, h3 {
       }
     }
   }
-.Master {
-    color: rgb(255, 0, 0);
+.God {
+    color: yellow;
+}
+.Elite {
+    color: red;
+}
+.Pro {
+    color: green;
 }
 .topbar-right-container {
     display: flex;
@@ -73,5 +90,11 @@ h1, h2, h3 {
     h2 {
         color: white;
         margin-right: 20px;
+    }
+}
+.name-wall-wrapper {
+    margin-left: 20px;
+    h2 {
+        color: red;
     }
 }

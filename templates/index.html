@@ -5,13 +5,15 @@
 
 <div class="topbar-container">
     <a href="/"><h1>MINI MILITIA APP</h1></a>
+    <a href="/name-wall" class="name-wall-wrapper"><h2>Name wall</h2></a>
     {% if not session %}
-    <a class="login-button-wrapper" href="/login"><button class="login-button">Log in</button></a>
+    <a class="login-button-wrapper" href="/login"><button class="login-button button">Log in</button></a>
     {% endif %}
     {% if session %}
     <div class="topbar-right-container">
         <h2 class="topbar-username">{{session["username"]}}</h2>
-        <a class="login-button-wrapper" href="/logout"><button class="login-button">Log out</button></a>
+        <!-- <a href="/profile/edit{{session['username']}}"><button class="profile-button button">Profile</button></a> -->
+        <a class="login-button-wrapper" href="/logout"><button class="login-button button">Log out</button></a>
     </div>
     {% endif %}
 </div>

@@ -10,7 +10,7 @@ class User:
     def high_tier_players(self):
         players = self.db.session.execute("select username, tier from users where tier>0")
         return players
-        
+
     def all (self):
         players = self.db.session.execute("select username, tier from users").fetchall()
         return players
@@ -18,11 +18,10 @@ class User:
     def new(self, data):
         with open('players.json') as json_file:
             json_data = json.load(json_file)
-
         password = data["password"].encode()
         tier=0
         if data["username"].capitalize() in json_data:
-            tier=2
+            tier=json_data[data["username"]]["tier"]
 
         hash = bcrypt.hashpw(password, bcrypt.gensalt())
         print("jutut:")

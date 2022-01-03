@@ -1,0 +1,35 @@
+.name-wall-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0px;
+  background-color: black;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.player-container {
+  padding: 20px;
+  margin: 10px;
+}
+
+.player-container h2 {
+  margin-top: 0px;
+}
+
+.hall-of-fame-title {
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+  color: yellow;
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+/*# sourceMappingURL=name-wall.css.map */

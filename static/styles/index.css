@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Outfit&family=Roboto+Mono&display=swap");
 :root {
-  --main-color: olivedrab
-;
+  --main-color: olivedrab;
+  --profile-button-color: green;
 }
 
 body {
@@ -44,15 +44,9 @@ h1, h2, h3 {
 }
 
 .login-button {
-  color: white;
-  -webkit-transition: all 200ms;
-  transition: all 200ms;
-  cursor: pointer;
   background-color: var(--main-color);
   border: 2px solid var(--main-color);
-  font-size: 20px;
-  width: 130px;
-  height: 40px;
+  margin-left: 5px;
 }
 
 .login-button:hover {
@@ -60,8 +54,27 @@ h1, h2, h3 {
   color: var(--main-color);
 }
 
+.profile-button {
+  background-color: var(--profile-button-color);
+  border: 2px solid var(--profile-button-color);
+}
+
+.profile-button:hover {
+  background-color: transparent;
+  color: var(--profile-button-color);
+}
+
+.button {
+  color: white;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  cursor: pointer;
+  font-size: 20px;
+  width: 130px;
+  height: 40px;
+}
+
 .Owner {
-  text-align: center;
   background: -webkit-gradient(linear, left top, right top, from(#00ff77), color-stop(25%, red), color-stop(50%, #00ff62), color-stop(75%, #ff4800), to(#00ff77));
   background: linear-gradient(to right, #00ff77 0%, red 25%, #00ff62 50%, #ff4800 75%, #00ff77 100%);
   background-size: 200% auto;
@@ -85,8 +98,16 @@ h1, h2, h3 {
   }
 }
 
-.Master {
+.God {
+  color: yellow;
+}
+
+.Elite {
   color: red;
+}
+
+.Pro {
+  color: green;
 }
 
 .topbar-right-container {
@@ -102,5 +123,13 @@ h1, h2, h3 {
 .topbar-right-container h2 {
   color: white;
   margin-right: 20px;
+}
+
+.name-wall-wrapper {
+  margin-left: 20px;
+}
+
+.name-wall-wrapper h2 {
+  color: red;
 }
 /*# sourceMappingURL=index.css.map */
