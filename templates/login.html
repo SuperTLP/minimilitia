@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+{% block content %}
+<head>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles/login.css') }}">
+</head>
+<form method="POST" class="authentication-container">
+    <h1>Log In</h1>
+    <div class="input-container">
+        <h3>Username</h3>
+        <input name="username"></input>
+    </div>
+    <div class="input-container">
+        <h3>Password</h3>
+        <input name="password" type="password"></input>
+    </div>
+
+    <button type="submit" class="login-button">Log in</button>
+    <p style="color: red">{{error_message}}</p>
+    <p> Don't have a user yet? Register <a href="/register">here</a></p>
+</form>
+{% endblock %}

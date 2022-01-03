@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+{% block content %}
+<head>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles/login.css') }}">
+</head>
+<form method="POST" class="authentication-container">
+    <h1>Register</h1>
+    <p style="color: red">to obtain a role, your username must be your da2 name.</p>
+    <div class="input-container">
+        <h3>Username</h3>
+        <input name="username"></input>
+    </div>
+    <div class="input-container">
+        <h3>Password</h3>
+        <input name="password" type="password"></input>
+    </div>
+    <div class="input-container">
+        <h3>Password again</h3>
+        <input name="password_confirmation" type="password"></input>
+    </div>
+    <button type="submit" class="login-button">Register</button>
+    <p>Already have a user? Log in <a href="/login">here</a></p>
+    <p style="color: red">{{ error_message }}</p>
+</form>
+{% endblock %}

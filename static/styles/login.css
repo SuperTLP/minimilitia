@@ -1,0 +1,42 @@
+.authentication-container {
+  margin: 80px;
+  width: 100%;
+  max-width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.authentication-container h1 {
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-container h3 {
+  margin: 0px;
+}
+
+.input-container input {
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid black;
+  height: 30px;
+  width: 100%;
+  outline: none;
+}
+/*# sourceMappingURL=login.css.map */
