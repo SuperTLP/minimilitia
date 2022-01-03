@@ -13,7 +13,7 @@ tiers = {
 
 @app.get("/")
 def home():
-    players = USER.high_tier_players()
+    players = USER.all()
     return render_template("/home.html", session=session, players=players, tiers=tiers)
     
 @app.get("/login")
