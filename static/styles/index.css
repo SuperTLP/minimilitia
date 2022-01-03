@@ -101,8 +101,8 @@ h1, h2, h3 {
 
 .God {
   text-shadow: 0em 0em 0.5em white;
-  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(40%, white), color-stop(50%, #ffd900), color-stop(60%, yellow), color-stop(60%, white), to(white));
-  background: linear-gradient(to right, white 0%, white 40%, #ffd900 50%, yellow 60%, white 60%, white 100%);
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(40%, white), color-stop(60%, yellow), to(white));
+  background: linear-gradient(to right, white 0%, white 40%, yellow 60%, white 100%);
   background-size: 200% auto;
   color: #000;
   background-clip: text;
