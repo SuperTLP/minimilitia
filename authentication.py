@@ -29,6 +29,7 @@ def handle_login():
         return render_template("/login.html", error_message="Incorrect username or password.")
     return redirect("/")
 
-    
-
-
+@app.get("/logout")
+def logout():
+    session.clear()
+    return redirect("/")

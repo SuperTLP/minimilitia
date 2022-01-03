@@ -63,3 +63,12 @@ h1, h2, h3 {
 .Master {
     color: rgb(255, 0, 0);
 }
+.topbar-right-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    h2 {
+        color: white;
+        margin-right: 20px;
+    }
+}
