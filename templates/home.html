@@ -13,16 +13,22 @@
             </p>
         </div>
     </div>
-    <div class="create-event-container">
-        <input name="event-title"></input>
-    </div>
-    <div class="top-tier-container">
-        <h2 class="top-tier-title">Registered players</h2>
-        {% for i in players %}
-        <div class="player-container">
-            <h2 class="player-name {{tiers[i[1]]}}">{{i[0]}}</h2>
+</div>
+    <div class="home-content-container">
+        <div class="tier-container" style="background-color: black;">
+            <h1>Tiers</h1>
+            <h3 class="tier-description-text"><span class="God">God</span> tier players are the best players of all time. Each of them have been the best player at least once.</p>
+            <h3 class="tier-description-text"><span class="Elite">Elite</span> tier players are top tier players who have been in top 10 at some point of time, but haven't been top 1.</p>
+            <h3 class="tier-description-text"><span class="Pro">Pro</span> tier players are top tier players who beat most of the players but haven't been in top 10.</p>
         </div>
-        {% endfor %}
+        <div class="top-tier-container">
+            <h2 class="top-tier-title">Registered players</h2>
+            {% for i in players %}
+            <div class="player-container">
+                <h2 class="player-name {{tiers[i[1]]}}">{{i[0]}}</h2>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 </div>
 {% endblock %}

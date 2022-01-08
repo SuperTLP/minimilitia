@@ -13,10 +13,8 @@
 .top-tier-container {
   background-color: black;
   margin-right: 10px;
-  margin-top: 50px;
   border: 1px solid black;
   min-height: 500px;
-  margin-left: auto;
   color: var(--main-color);
   width: 100%;
   max-width: 400px;
@@ -32,5 +30,34 @@
 
 .welcome-text-container {
   padding: 10px;
+}
+
+.tier-container h3 {
+  color: white;
+  margin: 0px;
+}
+
+.tier-container {
+  margin: 0px;
+  max-width: 1000px;
+}
+
+.tier-container h1 {
+  color: yellow;
+}
+
+.home-content-container {
+  background-color: black;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=home.css.map */
